@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class CollectionsEx8_2 {
+
+	public static void main(String[] args) {
+		Queue a=new LinkedList();
+
+		
+		a.add(10);
+		a.add("palak");
+		a.add(7.2);
+		a.add(90);
+		a.add(10);
+		a.add(5);
+
+		System.out.println(a);
+		System.out.println(a.poll());
+		System.out.println(a);
+		
+		Iterator i=a.iterator();
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+		
+		for(Object f:a) {
+			System.out.println(f);
+		}
+	}
+
+}
